@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sxb teams</title>
+
+  <!-- FONTAWESOME CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header py-1">
+    <div class="container">
+      <div class="header__top">
+        <marquee class="mb-1">Курсы иностранных валют к суму установленные Центральным банком Республики Узбекистан на
+          2022-09-08 USD
+          = 10937.14 (26.13) EUR = 11154.79 (-82.46) RUB = 178.2 (-0.74) GBP = 13196.75 (-56.85) JPY = 81.97 (0.22) CHF
+          = 11571.24 (-7.89) CNY = 1615.51 (-3.45)</marquee>
+      </div>
+      <div class="header__middle d-flex justify-content-end">
+        <div class="row align-items-center gap-2">
+          <div class="col">
+            <div class="header__func d-flex gap-4">
+              <div class="header__func-item" id="visual-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="header__theme d-none px-3 py-2 rounded">
+                <div class="header__theme-item mb-2">
+                  <p class="header__theme-label mb-1">Ko'rinish:</p>
+                  <ul class="list-group m-0">
+                    <li class="list-group-item border-0 p-1">
+                      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                        checked>
+                      <label class="form-check-label" for="firstRadio">Normal</label>
+                    </li>
+                    <li class="list-group-item border-0 p-1">
+                      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                      <label class="form-check-label" for="secondRadio">Oq-qora</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__theme-item">
+                  <p class="header__theme-label mb-2">Shrift o'lchami:</p>
+                  <ul class="header__font d-flex gap-4 ps-2">
+                    <li class="header__font-item header__font-minus badge text-center p-0">A-</li>
+                    <li class="header__font-item header__font-default badge text-center p-0">A</li>
+                    <li class="header__font-item header__font-plus badge text-center p-0">A+</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__func-item"><i class="fas fa-mobile-screen"></i></div>
+            </div>
+          </div>
+          <div class="col">
+            <ul class="header__lang d-flex gap-3">
+              <li class="header__lang-item active">Uz</li>
+              <li class="header__lang-item">Ru</li>
+              <li class="header__lang-item">En</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light py-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="site-logo" class="navbar__logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Biz haqimizda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Biz haqimizda</a></li>
+                <li><a class="dropdown-item" href="#">Bo'sh ish o'rinlari</a></li>
+                <li><a class="dropdown-item" href="#">Tashkilot boshqaruvi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mahsulotlar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">To'qimachilik sanoati</a></li>
+                <li><a class="dropdown-item" href="#">Don sanoatining mahsulotlari</a></li>
+                <li><a class="dropdown-item" href="#">Avtomobil sanoati</a></li>
+                <li><a class="dropdown-item" href="#">Qishloq xo'jaligi mahsulotlari</a></li>
+                <li><a class="dropdown-item" href="#">Xom-ashyo va materiallar</a></li>
+                <li><a class="dropdown-item" href="#">Qurilish mollari</a></li>
+                <li><a class="dropdown-item" href="#">Boshqalar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Xizmatlar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Eksport</a></li>
+                <li><a class="dropdown-item" href="#">Import</a></li>
+                <li><a class="dropdown-item" href="#">Bojxona rasmiylashtiruvi</a></li>
+                <li><a class="dropdown-item" href="#">Autsorsing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Aksiyadorlarga
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ochiq ma'lumotlar</a></li>
+                <li><a class="dropdown-item" href="#">Aksiyadorlar uchun</a></li>
+                <li><a class="dropdown-item" href="#">Kompaniyaning ichki hujjatlari</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Savollar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Eksport</a></li>
+                <li><a class="dropdown-item" href="#">Import</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Press
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Yangiliklar</a></li>
+                <li><a class="dropdown-item" href="#">FEA ma'lumotlari</a></li>
+                <li><a class="dropdown-item" href="#">Ko'rgazmalar</a></li>
+                <li><a class="dropdown-item" href="#">Fotogalereya</a></li>
+                <li><a class="dropdown-item" href="#">Videogalereya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Murojaat
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Yur-jis shaxslar murojaati</a></li>
+                <li><a class="dropdown-item" href="#">Korrupsiya to'g'risidagi hisobotlar bo'yicha fikr-mulohazalar</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link txt-color1" href="#">Aloqa</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /HEADER -->
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators text-light">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./img/banner.jpg" class="d-block w-100 banner__img" alt="banner-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./img/banner.jpg" class="d-block w-100 banner__img" alt="banner-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner.jpg" class="d-block w-100 banner__img" alt="banner-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+  </section>
+  <!-- /BANNER -->
+
+  <!-- BOOTSTRAP JS -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <!-- JQUERY JS -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

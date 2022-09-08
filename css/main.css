@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("../../fonts/OpenSans-Medium.ttf");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../../fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf");
+}
+body {
+  font-family: "OpenSans-Medium", sans-serif;
+  font-size: 14px;
+  color: #2e2d2c;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  outline: none !important;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.header__top marquee {
+  word-spacing: 4px;
+}
+.header__func {
+  position: relative;
+}
+.header__func-item i {
+  font-size: 18px;
+  color: #009da2;
+  cursor: pointer;
+}
+.header__theme {
+  position: absolute;
+  background-color: #fff;
+  top: 150%;
+  left: -30%;
+  z-index: 99;
+  width: 200px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 1, 0.14);
+}
+.header__theme-label {
+  font-family: "OpenSans-Bold";
+  user-select: none;
+}
+.header__theme .list-group-item {
+  border: none;
+  user-select: none;
+}
+.header__theme .list-group-item .form-check-input:checked {
+  background-color: #009da2;
+  border-color: #009da2;
+}
+.header__font-item {
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "OpenSans-SemiBold";
+  user-select: none;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background-color: #a6a6a6;
+}
+.header__lang-item {
+  font-size: 16px;
+  font-family: "OpenSans-SemiBold";
+  cursor: pointer;
+}
+.header__lang-item.active {
+  color: #009da2;
+  text-decoration: underline;
+  font-family: "OpenSans-Bold";
+}
+.header .navbar__logo {
+  width: 170px;
+  height: 72px;
+  object-fit: cover;
+}
+.header .navbar .nav-link {
+  font-size: 15px;
+  font-family: "OpenSans-SemiBold";
+  padding: 8px 12px;
+  text-transform: uppercase;
+  color: #2e2d2c;
+}
+.header .navbar .nav-link:after {
+  display: none;
+}
+.header .navbar .dropdown-menu {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 1, 0.14);
+  border: none;
+}
+.header .navbar .dropdown-item:active {
+  background-color: #009da2;
+}
+.header .navbar-toggler {
+  border: none;
+}
+.header .navbar-toggler:active, .header .navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.header .navbar-toggler-icon {
+  background-image: none;
+}
+.header .navbar-toggler-icon i {
+  font-size: 24px;
+  color: #2e2d2c;
+}
+
+.banner__img {
+  height: 550px;
+}
+
+/*# sourceMappingURL=main.css.map */
