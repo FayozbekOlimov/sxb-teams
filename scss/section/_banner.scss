@@ -1,6 +1,58 @@
 .banner {
-  &__img {
-    height: 550px;
-    // object-fit: cover;
+  &__carousel {
+    &-item {
+      position: relative;
+    }
+
+    &-imgBx {
+      img {
+        height: 500px;
+        object-fit: cover;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba($color: #000, $alpha: 0.4);
+      }
+    }
+
+    &-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-title {
+      font-size: $title-size;
+    }
+
+    &-down {
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: hill-down .6s infinite alternate linear;
+
+      i {
+        font-size: 28px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes hill-down {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(8px);
   }
 }

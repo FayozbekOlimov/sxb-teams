@@ -44,7 +44,7 @@
 
   &__font {
     &-item {
-      font-size: 15px;
+      font-size: $txt-size;
       cursor: pointer;
       font-family: $open600;
       user-select: none;
@@ -52,13 +52,13 @@
       height: 30px;
       display: grid;
       place-items: center;
-      background-color: $gray;
+      letter-spacing: 2px;
     }
   }
 
   &__lang {
     &-item {
-      font-size: 16px;
+      font-size: $normal-size;
       font-family: $open600;
       cursor: pointer;
 
@@ -78,7 +78,7 @@
     }
 
     .nav-link {
-      font-size: 15px;
+      font-size: $txt-size;
       font-family: $open600;
       padding: 8px 12px;
       text-transform: uppercase;

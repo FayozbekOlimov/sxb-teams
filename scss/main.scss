@@ -2,24 +2,15 @@
 @import "./base/variables";
 @import "./base/base";
 
-// components
-// @import "./components/icon-btn";
-// @import "./components/navbar";
-
 // layout
 @import "./layout/header";
 @import "./layout/footer";
 
 // section
 @import "./section/banner";
-// @import "./section/news";
-// @import "./section/services";
-// @import "./section/legal-basis";
-// @import "./section/video-gallery.scss";
-// @import "./section/regional-department";
-// @import "./section/info";
-// @import "./layout/footer";
-// @import "./section/copyright";
+@import "./section/products";
+@import "./section/about";
+@import "./section/services";
 
 // responsive
 @import "./base/responsive";
