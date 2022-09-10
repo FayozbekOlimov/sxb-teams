@@ -1,0 +1,25 @@
+.footer {
+  &__main {
+    .footer-brand {
+      width: 100px;
+      display: block;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .nav-link {
+    color: $txt-color2;
+    font-family: $open600;
+    transition: color .3s ease;
+    font-size: $txt-size;
+
+    &:hover {
+      color: $txt-color1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.press {
+  &__card {
+    overflow: hidden;
+
+    .card-title {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    .card-title,
+    .card-text {
+      font-size: $normal-size;
+      font-family: $open700;
+    }
+
+    .card-text {
+      color: $txt-color2;
+    }
+
+    img {
+      transition: transform .5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+}

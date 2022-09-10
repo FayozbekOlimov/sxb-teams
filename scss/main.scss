@@ -2,6 +2,11 @@
 @import "./base/variables";
 @import "./base/base";
 
+// components
+@import "./components/link-btn";
+@import "./components/line";
+@import "./components/forms";
+
 // layout
 @import "./layout/header";
 @import "./layout/footer";
@@ -11,6 +16,8 @@
 @import "./section/products";
 @import "./section/about";
 @import "./section/services";
+@import "./section/press";
+@import "./section/partners";
 
 // responsive
 @import "./base/responsive";

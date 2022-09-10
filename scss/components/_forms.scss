@@ -1,0 +1,18 @@
+.message__form {
+  &-input {
+    padding: 20px;
+    font-size: $normal-size;
+    font-family: $open600;
+    color: $txt-color2;
+    width: 100%;
+    transition: all .3s ease;
+
+    &:focus {
+      outline: 1px solid #000;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+}

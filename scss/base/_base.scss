@@ -42,14 +42,27 @@ img {
   object-fit: cover;
 }
 
+input, textarea, button {
+  border: none;
+  outline: none;
+}
+
 a {
   outline: none !important;
   text-decoration: none;
-  color: inherit;
+  color: $txt-color1;
+
+  &:hover {
+    color: inherit;
+  }
 }
 
 .bg-light {
   background-color: #fff !important;
+}
+
+.bg-gray {
+  background-color: #f2f2f2 !important;
 }
 
 .section-title {
@@ -62,34 +75,4 @@ a {
   font-size: $subtitle-size;
   font-family: $open700;
   margin-bottom: 0;
-}
-
-.primary-color {
-  color: $txt-color1;
-}
-
-.line {
-  width: 100px;
-  height: 4px;
-  margin: 24px auto;
-  background: linear-gradient(to right, #babab9 50%, #e1e1e1 50%);
-}
-
-.link-btn {
-  font-family: $open700;
-  font-size: $normal-size;
-  transition: color .3s ease;
-
-  img {
-    margin-left: 2px;
-    margin-bottom: 4px;
-    transition: margin-left .3s ease;
-  }
-
-  &:hover {
-    color: $primary;
-    img {
-      margin-left: 6px;
-    }
-  }
 }

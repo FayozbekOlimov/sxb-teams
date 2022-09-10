@@ -19,7 +19,7 @@ $(document).ready(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
 
-  $('.owl-carousel').owlCarousel({
+  $('.banner__carousel').owlCarousel({
     items: 1,
     loop: true,
     margin: 0,
@@ -27,5 +27,32 @@ $(document).ready(function () {
     autoplayTimeout: 5000,
     smartSpeed: 500,
     dots: false
+  });
+
+  $('.partners__carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    dots: false,
+    items: 6,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      480: {
+        items: 3,
+      },
+      768: {
+        items: 4,
+      },
+      1024: {
+        items: 4,
+      },
+      1160: {
+        items: 6,
+      },
+    },
   });
 });
