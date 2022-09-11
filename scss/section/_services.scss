@@ -40,7 +40,7 @@
     }
 
     &-title {
-      font-size: $subtitle-size;
+      @include subtitle-size;
       font-family: $open600;
     }
   }

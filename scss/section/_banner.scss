@@ -29,8 +29,24 @@
       transform: translate(-50%, -50%);
     }
 
+    &-btn {
+      background-color: $primary;
+      border-color: $primary;
+
+      &:hover,
+      &:focus {
+        border-color: $primary;
+        background-color: rgba($color: $primary, $alpha: 0.8);
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: 0 0 0 0.25rem rgba($color: $primary, $alpha: 0.4) !important;
+      }
+    }
+
     &-title {
-      font-size: $title-size;
+      @include title-size;
     }
 
     &-down {
@@ -52,6 +68,7 @@
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(8px);
   }

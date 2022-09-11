@@ -1,5 +1,7 @@
 .footer {
   &__main {
+    border-bottom: 1px solid $txt-color2;
+
     .footer-brand {
       width: 100px;
       display: block;
@@ -10,16 +12,36 @@
         object-fit: cover;
       }
     }
-  }
 
-  .nav-link {
-    color: $txt-color2;
-    font-family: $open600;
-    transition: color .3s ease;
-    font-size: $txt-size;
+    .nav-link {
+      color: $txt-color2;
+      font-family: $open600;
+      transition: color .3s ease;
+      font-size: 15px;
 
-    &:hover {
+      &:hover {
+        color: $txt-color1;
+      }
+    }
+
+    h6.nav-link {
+      @include normal-size;
       color: $txt-color1;
     }
+  }
+
+  &__social {
+    &-item {
+      width: 28px;
+      height: 28px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__copy {
+    color: $txt-color2;
   }
 }

@@ -46,16 +46,3 @@
     }
   }
 }
-
-@media (max-width: 575px) {
-  .products {
-    &__card {
-      &.card-row {
-        flex-direction: column;
-        & > div {
-          width: 100%;
-        }
-      }
-    }
-  }
-}

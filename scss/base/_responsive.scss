@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+  .banner__carousel-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 575px) {
+  .message__form-input {
+    padding: 14px;
+  }
+
+  .products {
+    &__card {
+      &.card-row {
+        flex-direction: column;
+
+        &>div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -66,13 +66,17 @@ a {
 }
 
 .section-title {
-  font-size: $title-size;
+  @include title-size;
   font-family: $open700;
   margin-bottom: 0;
 }
 
 .section-subtitle {
-  font-size: $subtitle-size;
+  @include subtitle-size;
   font-family: $open700;
   margin-bottom: 0;
+}
+
+.fw-bolder {
+  font-family: $open600;
 }

@@ -8,7 +8,7 @@
   &__func {
     &-item {
       i {
-        font-size: 18px;
+        @include normal-size;
         color: $primary;
         cursor: pointer;
       }
@@ -58,7 +58,7 @@
 
   &__lang {
     &-item {
-      font-size: $normal-size;
+      @include normal-size;
       font-family: $open600;
       cursor: pointer;
 

@@ -1,6 +1,6 @@
 .link-btn {
   font-family: $open700;
-  font-size: $normal-size;
+  @include normal-size;
   transition: color .3s ease;
 
   img {

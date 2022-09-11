@@ -4,6 +4,11 @@ $(document).ready(function () {
     $('.header__theme').toggle();
   });
 
+  $('#mobile-icon').click(function (e) { 
+    e.preventDefault();
+    window.open("/", "example", "width=375px,height=576px,left=300,top=100");
+  });
+
   $('.form-check-input').change(function (e) {
     e.preventDefault();
     if ($('#firstRadio').is(":checked")) {

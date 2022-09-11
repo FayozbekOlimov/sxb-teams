@@ -11,7 +11,7 @@
 
     .card-title,
     .card-text {
-      font-size: $normal-size;
+      @include normal-size;
       font-family: $open700;
     }
 

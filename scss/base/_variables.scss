@@ -14,3 +14,33 @@ $txt-size: 14px;
 $normal-size: 16px;
 $title-size: 40px;
 $subtitle-size: 20px;
+
+@mixin title-size() {
+  @media only screen and (min-width: 576px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 28px;
+  }
+}
+
+@mixin normal-size() {
+  @media only screen and (min-width: 576px) {
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+@mixin subtitle-size {
+  @media only screen and (min-width: 576px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 18px;
+  }
+}

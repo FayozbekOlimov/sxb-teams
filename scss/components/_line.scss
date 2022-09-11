@@ -1,6 +1,13 @@
 .line {
   width: 100px;
-  height: 4px;
+  height: 3px;
   margin: 24px auto;
   background: linear-gradient(to right, #babab9 50%, #e1e1e1 50%);
+}
+
+.breadcrumb-line {
+  @extend .line;
+  width: 60px;
+  margin: 0 12px;
+  background: linear-gradient(to right, #fff 50%, #babab9 50%);
 }
