@@ -552,6 +552,59 @@ a:hover {
   font-family: "OpenSans-Bold";
 }
 
+.leading__img {
+  width: 100%;
+  height: 200px;
+}
+.leading__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.leading__card .card-title {
+  font-family: "OpenSans-SemiBold";
+}
+.leading__card h5.card-title {
+  font-size: 15px;
+}
+.leading__card h6.card-title {
+  font-size: 14px;
+}
+.leading__card .card-text {
+  font-family: "OpenSans-Medium";
+  font-size: 12px;
+}
+.leading__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leading__contact-item {
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  border-top: 1px solid #dee2e6;
+}
+.leading__contact-item i {
+  color: #009da2;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.leading__contact-item:first-child {
+  border-bottom-left-radius: 4px;
+  border-right: 1px solid #dee2e6;
+}
+.leading__contact-item:last-child {
+  border-bottom-right-radius: 4px;
+}
+.leading__contact-item:hover {
+  background-color: #009da2;
+  border-color: #009da2;
+}
+.leading__contact-item:hover i {
+  color: #fff;
+}
+
 @media (max-width: 767px) {
   .banner__carousel-content {
     width: 90%;

@@ -4,9 +4,44 @@ $(document).ready(function () {
     $('.header__theme').toggle();
   });
 
-  $('#mobile-icon').click(function (e) { 
+  $('#mobile-icon').click(function (e) {
     e.preventDefault();
-    window.open("/", "example", "width=375px,height=576px,left=300,top=100");
+    window.open("/", "example", "width=375px,height=576px,left=400,top=100");
+  });
+
+  $('.header__font-plus').click(function (e) {
+    e.preventDefault();
+    $('.header__font-minus').removeClass('disabled');
+    if (parseInt($('body').css('font-size')) == 18) {
+      $(this).addClass('disabled');
+      return;
+    }
+    $('body, p, span, li, button, a, label, td, h1, h2, h3, h4, h5, h6').css('font-size', function () {
+      return parseInt($(this).css('font-size')) + 1 + 'px';
+    });
+  });
+
+  $('.header__font-minus').click(function (e) {
+    e.preventDefault();
+    $('.header__font-plus').removeClass('disabled');
+    if (parseInt($('body').css('font-size')) <= 10) {
+      $(this).addClass('disabled');
+      return;
+    }
+    $('body, p, span, li, button, a, label, td, h1, h2, h3, h4, h5, h6').css('font-size', function () {
+      return parseInt($(this).css('font-size')) - 1 + 'px';
+    });
+  });
+
+  $('.header__font-default').click(function (e) {
+    e.preventDefault();
+    $('.header__font-plus').removeClass('disabled');
+    $('.header__font-minus').removeClass('disabled');
+
+    let delta = parseInt($('body').css('font-size')) - 14;
+    $('body, p, span, li, button, a, label, td, h1, h2, h3, h4, h5, h6').css('font-size', function () {
+      return parseInt($(this).css('font-size')) - delta + 'px';
+    });
   });
 
   $('.form-check-input').change(function (e) {
