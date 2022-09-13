@@ -1,3 +1,12 @@
+@media (min-width: 992px) {
+  .header .navbar {
+    .dropdown-menu {
+      box-shadow: 0px 0px 8px 0px rgb(0, 0, 1, 0.14);
+      border: none;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .banner__carousel-content {
     width: 90%;

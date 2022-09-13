@@ -65,8 +65,10 @@
                   </ul>
                 </div>
               </div>
-              <div class="header__func-item d-none d-sm-block" id="mobile-icon"><i class="fas fa-mobile-screen"></i></div>
-              <div class="header__func-item d-lg-none"><i class="fas fa-search"></i></div>
+              <div class="header__func-item d-none d-sm-block" id="mobile-icon"><i class="fas fa-mobile-screen"></i>
+              </div>
+              <div class="header__func-item d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                  class="fas fa-search"></i></div>
             </div>
           </div>
           <div class="col">
@@ -167,7 +169,8 @@
               <a class="nav-link txt-color1" href="#">Aloqa</a>
             </li>
           </ul>
-          <button class="btn btn-dark btn-sm search-btn d-none d-lg-block"><i class="fas fa-search"></i></button>
+          <button class="btn btn-dark btn-sm search-btn d-none d-lg-block" data-bs-toggle="modal"
+            data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
         </div>
       </div>
     </nav>
@@ -185,7 +188,8 @@
           <h1 class="banner__carousel-title text-uppercase text-white text-center">
             UZSANOATEXPORT - Eksport va importni qo'llab-quvvatlash
           </h1>
-          <button class="btn btn-primary banner__carousel-btn">So'rov jo'natish</button>
+          <button class="btn btn-primary banner__carousel-btn" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">So'rov jo'natish</button>
         </div>
         <div class="banner__carousel-down text-center">
           <a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -199,7 +203,8 @@
           <h1 class="banner__carousel-title text-uppercase text-white text-center">
             UZSANOATEXPORT - Eksport va importni qo'llab-quvvatlash
           </h1>
-          <button class="btn btn-primary banner__carousel-btn">So'rov jo'natish</button>
+          <button class="btn btn-primary banner__carousel-btn" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">So'rov jo'natish</button>
         </div>
         <div class="banner__carousel-down text-center">
           <a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -213,7 +218,8 @@
           <h1 class="banner__carousel-title text-uppercase text-white text-center">
             UZSANOATEXPORT - Eksport va importni qo'llab-quvvatlash
           </h1>
-          <button class="btn btn-primary banner__carousel-btn">So'rov jo'natish</button>
+          <button class="btn btn-primary banner__carousel-btn" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">So'rov jo'natish</button>
         </div>
         <div class="banner__carousel-down text-center">
           <a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -430,10 +436,10 @@
           <div class="col col-12 col-md-6">
             <div class="row g-3">
               <div class="col col-12">
-                <input class="message__form-input" type="text" name="name" placeholder="Ism">
+                <input class="message__form-input" type="text" name="name" placeholder="Ism" required>
               </div>
               <div class="col col-12">
-                <input class="message__form-input" type="email" name="email" placeholder="Elektron pochta">
+                <input class="message__form-input" type="email" name="email" placeholder="Elektron pochta" required>
               </div>
             </div>
           </div>
@@ -443,7 +449,7 @@
         </div>
         <div class="row">
           <div class="col col-12 text-center">
-            <button class="link-btn btn-bg text-uppercase my-3" type="submit">Yuborish <img src="./img/arrow.png"
+            <button class="link-btn btn btn-dark my-3" type="submit">Yuborish <img src="./img/arrow.png"
                 alt="arrow"></button>
           </div>
         </div>
@@ -545,6 +551,66 @@
     </div>
   </footer>
   <!-- /FOOTER -->
+
+  <!-- MODAL -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Qayta aloqa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" class="message__form modal__form">
+            <div class="row g-3">
+              <div class="col col-12 col-md-6">
+                <label for="modal-name" class="form-label">Ism</label>
+                <input class="message__form-input" type="text" id="modal-name" name="modal-name" required>
+              </div>
+              <div class="col col-12 col-md-6">
+                <label for="modal-email" class="form-label">Elektron pochta</label>
+                <input class="message__form-input" type="email" id="modal-email" name="modal-email" required>
+              </div>
+              <div class="col col-12 col-md-6">
+                <label for="modal-organization" class="form-label">Tashkilot</label>
+                <input class="message__form-input" type="text" id="modal-organization" name="modal-organization"
+                  required>
+              </div>
+              <div class="col col-12 col-md-6">
+                <label for="modal-phone" class="form-label">Telefon</label>
+                <input class="message__form-input" type="text" id="modal-phone" name="modal-phone" required>
+              </div>
+              <div class="col col-12">
+                <textarea class="message__form-input" name="modal-message" rows="5" placeholder="Xabar"></textarea>
+              </div>
+              <div class="col col-12">
+                <button class="btn btn-primary banner__carousel-btn w-100" type="submit">Yuborish</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /MODAL -->
+
+  <!-- SEARCH MODAL -->
+  <div class="modal fade" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="" class="message__form modal__form search__form d-flex gap-3 align-items-center">
+            <input class="message__form-input" type="search" name="search" id="search">
+            <button type="button" class="btn-close btn-dark btn" data-bs-dismiss="modal"><i
+                class="fas fa-close"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /SEARCH MODAL -->
 
   <!-- BOOTSTRAP JS -->
   <script src="./js/bootstrap.bundle.min.js"></script>

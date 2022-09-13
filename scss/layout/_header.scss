@@ -5,6 +5,12 @@
     }
   }
 
+  &__middle {
+    .col:nth-child(2) {
+      border-left: 1px solid $txt-color2;
+    }
+  }
+
   &__func {
     &-item {
       i {
@@ -87,11 +93,6 @@
       &:after {
         display: none;
       }
-    }
-
-    .dropdown-menu {
-      box-shadow: 0px 0px 8px 0px rgb(0, 0, 1, 0.14);
-      border: none;
     }
 
     .dropdown-item {
