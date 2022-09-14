@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
   <!-- HEADER -->
   <header class="header py-1">
     <div class="container">
@@ -67,7 +66,8 @@
               </div>
               <div class="header__func-item d-none d-sm-block" id="mobile-icon"><i class="fas fa-mobile-screen"></i>
               </div>
-              <div class="header__func-item d-lg-none"><i class="fas fa-search"></i></div>
+              <div class="header__func-item d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                  class="fas fa-search"></i></div>
             </div>
           </div>
           <div class="col">
@@ -168,7 +168,8 @@
               <a class="nav-link txt-color1" href="#">Aloqa</a>
             </li>
           </ul>
-          <button class="btn btn-dark btn-sm search-btn d-none d-lg-block"><i class="fas fa-search"></i></button>
+          <button class="btn btn-dark btn-sm search-btn d-none d-lg-block" data-bs-toggle="modal"
+            data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
         </div>
       </div>
     </nav>
@@ -257,7 +258,7 @@
         </div>
         <div class="row">
           <div class="col col-12 text-center">
-            <button class="link-btn btn-bg text-uppercase my-3" type="submit">Yuborish <img src="./img/arrow.png"
+            <button class="link-btn btn btn-dark my-3" type="submit">Yuborish <img src="./img/arrow.png"
                 alt="arrow"></button>
           </div>
         </div>
@@ -382,7 +383,8 @@
               </div>
               <div class="col col-12 col-md-6">
                 <label for="modal-organization" class="form-label">Tashkilot</label>
-                <input class="message__form-input" type="text" id="modal-organization" name="modal-organization" required>
+                <input class="message__form-input" type="text" id="modal-organization" name="modal-organization"
+                  required>
               </div>
               <div class="col col-12 col-md-6">
                 <label for="modal-phone" class="form-label">Telefon</label>
@@ -401,6 +403,23 @@
     </div>
   </div>
   <!-- /MODAL -->
+
+  <!-- SEARCH MODAL -->
+  <div class="modal fade" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="" class="message__form modal__form search__form d-flex gap-3 align-items-center">
+            <input class="message__form-input" type="search" name="search" id="search">
+            <button type="button" class="btn-close btn-dark btn" data-bs-dismiss="modal"><i
+                class="fas fa-close"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /SEARCH MODAL -->
 
   <!-- BOOTSTRAP JS -->
   <script src="./js/bootstrap.bundle.min.js"></script>

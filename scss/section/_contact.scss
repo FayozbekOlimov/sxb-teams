@@ -1,0 +1,16 @@
+.contact {
+  &__item {
+    i {
+      color: #ced4da;
+      font-size: 18px;
+    }
+    p, a {
+      font-size: $normal-size;
+    }
+  }
+
+  &__label {
+    font-family: $open700;
+    font-size: $normal-size;
+  }
+}

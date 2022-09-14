@@ -636,6 +636,18 @@ a:hover {
   color: #fff;
 }
 
+.contact__item i {
+  color: #ced4da;
+  font-size: 18px;
+}
+.contact__item p, .contact__item a {
+  font-size: 16px;
+}
+.contact__label {
+  font-family: "OpenSans-Bold";
+  font-size: 16px;
+}
+
 @media (min-width: 992px) {
   .header .navbar .dropdown-menu {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 1, 0.14);
