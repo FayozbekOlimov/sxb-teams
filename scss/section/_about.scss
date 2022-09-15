@@ -1,3 +1,7 @@
 .about__content {
   font-family: $open600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
 }

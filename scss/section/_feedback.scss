@@ -1,0 +1,22 @@
+.feedback {
+  .message__form-input {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    color: $txt-color1;
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  .form-check-label,
+  .form-label {
+    font-family: $open600;
+    @include normal-size;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    font-size: 17px;
+  }
+}

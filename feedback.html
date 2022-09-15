@@ -185,79 +185,89 @@
     <div class="small-banner__content">
       <div class="container">
         <h1 class="banner__carousel-title text-white">
-          Kompaniya haqida
+          Kontaktlar
         </h1>
         <div class="breadcrumb d-flex align-items-center">
           <a href="#" class="text-uppercase text-white">Asosiy</a>
           <div class="breadcrumb-line"></div>
-          <a href="#" class="text-uppercase text-white">KOMPANIYA HAQIDA</a>
+          <a href="#" class="text-uppercase text-white">Kontaktlar</a>
         </div>
       </div>
     </div>
   </section>
   <!-- /SMALL BANNER -->
 
-  <!-- CONTENT -->
-  <section class="content py-3 py-md-5">
+  <!-- FEEDBACK FORM -->
+  <section class="feedback py-3 py-md-5">
     <div class="container">
-      <h1 class="section-title">Biz haqimizda</h1>
-      <div class="line mx-0"></div>
-      <div class="content__data fw-bolder">
-        "UZSANOATEXPORT" tashqi savdo kompaniyasi 2015-yil 31-dekabrda O'zbekiston Respublikasi Prezidentining 2015-yil
-        31-dekabrdagi "Vazirlik tuzilmasini optimallashtirish va samaradorligini yanada oshirish chora-tadbirlari
-        to'g'risida" gi 2463-sonli qaroriga muvofiq Tashqi iqtisodiy aloqalar, investitsiyalar va savdo vazirligi
-        O'zbekiston Respublikasi "Markazsanoateksport" AJ va "Uzprommashimpeks" AJni qayta tashkil etish yo'li bilan
-        tashkil etilgan.
-
-        UZSANOATEXPORT eksport-import operatsiyalari sohasida katta tajribaga ega bo'lib, qayta tashkil etilgan tashqi
-        savdo kompaniyalarining qariyb 30 yillik faoliyati natijasida to'plangan.
-
-
-
-        Kompaniyamiz to'qimachilik, avtomobilsozlik, g'alla sanoati, yuqori sifatli qishloq xo'jaligi mahsulotlari,
-        shuningdek, mahalliy qurilish va xomashyo mahsulotlari eksporti bozorida yetakchi o'rinlarni egallaydi.
-
-
-
-        So'nggi 6 yil ichida kompaniya 950 million dollarlik 300 dan ortiq mahalliy tovarlar eksportini amalga oshirdi.
-        Eksport geografiyasi keng va Xitoy, Janubiy Koreya, Rossiya, Hindiston, Turkiya, Germaniya, Ukraina, Belarus,
-        Qozog'iston, Tojikiston, BAA, Singapur, Afg'oniston, Pokiston kabi davlatlarni qamrab oladi.
-
-
-
-        Bugungi kunda bizning kompaniyamiz barcha xizmatlarni taqdim etadi, xususan:
-
-        - tashqi iqtisodiy faoliyatni autsorsing qilish;
-
-        - tovarlar eksporti;
-
-        - eksportdan oldi moliyalashtirish;
-
-        - tovarlar importi;
-
-        - logistika xizmatlari;
-
-        - bojxona rasmiylashtiruvi;
-
-        - sertifikatlash.
-
-
-        Kompaniya bojxona sohasidagi mutaxassislarimizning muvofiqlashtirilgan va samarali ishlarini bajarishni,
-        shuningdek, o'z oldiga qo'ygan vazifalarni samarali hal etishni o'z zimmasiga oladi.
-
-
-
-        Kompaniya O'zbekiston korxonalariga tashqi savdo faoliyatida ko'rsatiladigan xizmatlar turini yanada
-        takomillashtirish va kengaytirishni maqsad qilib qo'ygan.
-
-
-
-        Uzsanoatexport O'zbekiston Respublikasi hududida ham, chet elda ham obro'siga ega ishonchli biznes hamkor
-        hisoblanadi.
-      </div>
+      <form action="" class="feedback__form">
+        <div class="d-flex gap-3 my-2">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="f-check1" checked>
+            <label class="form-check-label" for="f-check1">
+              Yuridik shaxslar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="f-check2">
+            <label class="form-check-label" for="f-check2">
+              Jismoniy shaxslar
+            </label>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col col-12">
+            <label for="f-name" class="form-label">FISH</label>
+            <input class="message__form-input" type="text" id="f-name" name="f-name">
+          </div>
+          <div class="col col-12">
+            <label for="f-date" class="form-label">Tug'ilgan sanasi</label>
+            <input class="message__form-input" type="date" id="f-date" name="f-date">
+          </div>
+          <div class="col col-12">
+            <label for="f-pasId" class="form-label">Pasport seriyasi</label>
+            <input class="message__form-input" type="text" id="f-pasId" name="f-pasId">
+          </div>
+          <div class="col col-12">
+            <label for="f-address" class="form-label">Manzil</label>
+            <input class="message__form-input" type="text" id="f-address" name="f-address">
+          </div>
+          <div class="col col-12">
+            <label for="f-index" class="form-label">Indeks</label>
+            <input class="message__form-input" type="text" id="f-index" name="f-index">
+          </div>
+          <div class="col col-12">
+            <label for="f-email" class="form-label">E-mail</label>
+            <input class="message__form-input" type="email" id="f-email" name="f-email">
+          </div>
+          <div class="col col-12">
+            <label for="f-phone" class="form-label">Telefon</label>
+            <input class="message__form-input" type="text" id="f-phone" name="f-phone">
+          </div>
+          <div class="col col-12">
+            <label for="f-subject" class="form-label">Subyekt turi</label>
+            <input class="message__form-input" type="text" id="f-subject" name="f-subject">
+          </div>
+          <div class="col col-12">
+            <label for="f-message" class="form-label">Savol matni</label>
+            <textarea class="message__form-input" name="f-message" rows="5"></textarea>
+          </div>
+          <div class="col col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="f-checkbox" id="f-checkbox">
+              <label class="form-check-label" for="f-checkbox">
+                Shaxsiy ma'lumotlarim o'zim tomonidan mustaqil ravishda taqdim etiladi, ularni qayta ishlanishiga roziman
+              </label>
+            </div>
+          </div>
+          <div class="col col-12">
+            <button class="btn btn-primary banner__carousel-btn w-100" type="submit">Yuborish</button>
+          </div>
+        </div>
+      </form>
     </div>
   </section>
-  <!-- /CONTENT -->
+  <!-- /FEEDBACK FORM -->
 
   <!-- LEAVE MESSAGE -->
   <section class="message py-3 py-md-5 bg-gray">
