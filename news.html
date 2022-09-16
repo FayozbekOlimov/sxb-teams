@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sxb teams</title>
+
+  <!-- FONTAWESOME CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- OWL CAROUSEL CSS -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header py-1">
+    <div class="container">
+      <div class="header__top">
+        <marquee class="mb-1">
+          O'zbekiston Respublikasi Markaziy banki tomonidan belgilangan so'mga xorijiy valyuta kurslari 2022-09-09 USD =
+          10937.14 (26.13) EUR = 11154.79 (-82.46) RUB = 178.2 (-0.74) GBP = 13196.75 (-56.85) JPY = 81.97 (0.22) CHF =
+          11571.24 (-7.89) CNY = 1615.51 (-3.45)
+        </marquee>
+      </div>
+      <div class="header__middle d-flex justify-content-end">
+        <div class="row align-items-center gap-2">
+          <div class="col">
+            <div class="header__func d-flex gap-4 align-items-center">
+              <div class="header__func-item" id="visual-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="header__theme px-3 py-2 rounded" style="display: none;">
+                <div class="header__theme-item mb-2">
+                  <p class="header__theme-label mb-1">Ko'rinish:</p>
+                  <ul class="list-group m-0">
+                    <li class="list-group-item border-0 p-1">
+                      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio"
+                        checked>
+                      <label class="form-check-label" for="firstRadio">Normal</label>
+                    </li>
+                    <li class="list-group-item border-0 p-1">
+                      <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                      <label class="form-check-label" for="secondRadio">Oq-qora</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__theme-item">
+                  <p class="header__theme-label mb-2">Shrift o'lchami:</p>
+                  <ul class="header__font d-flex gap-4 ps-2">
+                    <li class="header__font-item header__font-minus badge text-center p-0 btn btn-secondary">A-</li>
+                    <li class="header__font-item header__font-default badge text-center p-0 btn btn-secondary">A</li>
+                    <li class="header__font-item header__font-plus badge text-center p-0 btn btn-secondary">A+</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__func-item d-none d-sm-block" id="mobile-icon"><i class="fas fa-mobile-screen"></i>
+              </div>
+              <div class="header__func-item d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                  class="fas fa-search"></i></div>
+            </div>
+          </div>
+          <div class="col">
+            <ul class="header__lang d-flex gap-3">
+              <li class="header__lang-item active">UZ</li>
+              <li class="header__lang-item">RU</li>
+              <li class="header__lang-item">EN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light py-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="site-logo" class="navbar__logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Biz haqimizda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Biz haqimizda</a></li>
+                <li><a class="dropdown-item" href="#">Bo'sh ish o'rinlari</a></li>
+                <li><a class="dropdown-item" href="#">Tashkilot boshqaruvi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mahsulotlar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">To'qimachilik sanoati</a></li>
+                <li><a class="dropdown-item" href="#">Don sanoatining mahsulotlari</a></li>
+                <li><a class="dropdown-item" href="#">Avtomobil sanoati</a></li>
+                <li><a class="dropdown-item" href="#">Qishloq xo'jaligi mahsulotlari</a></li>
+                <li><a class="dropdown-item" href="#">Xom-ashyo va materiallar</a></li>
+                <li><a class="dropdown-item" href="#">Qurilish mollari</a></li>
+                <li><a class="dropdown-item" href="#">Boshqalar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Xizmatlar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Eksport</a></li>
+                <li><a class="dropdown-item" href="#">Import</a></li>
+                <li><a class="dropdown-item" href="#">Bojxona rasmiylashtiruvi</a></li>
+                <li><a class="dropdown-item" href="#">Autsorsing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Aksiyadorlarga
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ochiq ma'lumotlar</a></li>
+                <li><a class="dropdown-item" href="#">Aksiyadorlar uchun</a></li>
+                <li><a class="dropdown-item" href="#">Kompaniyaning ichki hujjatlari</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Press
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Yangiliklar</a></li>
+                <li><a class="dropdown-item" href="#">FEA ma'lumotlari</a></li>
+                <li><a class="dropdown-item" href="#">Ko'rgazmalar</a></li>
+                <li><a class="dropdown-item" href="#">Fotogalereya</a></li>
+                <li><a class="dropdown-item" href="#">Videogalereya</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt-color1" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Murojaat
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Yur-jis shaxslar murojaati</a></li>
+                <li><a class="dropdown-item" href="#">Korrupsiya haqida fikrlar</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link txt-color1" href="#">Aloqa</a>
+            </li>
+          </ul>
+          <button class="btn btn-dark btn-sm search-btn d-none d-lg-block" data-bs-toggle="modal"
+            data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /HEADER -->
+
+  <!-- SMALL BANNER -->
+  <section class="small-banner">
+    <div class="small-banner__bg">
+      <img src="./img/about-us.jpg" alt="banner-img">
+    </div>
+    <div class="small-banner__content">
+      <div class="container">
+        <h1 class="banner__carousel-title text-white">
+          Matbuot markazi
+        </h1>
+        <div class="breadcrumb d-flex align-items-center">
+          <a href="#" class="text-uppercase text-white">Asosiy</a>
+          <div class="breadcrumb-line"></div>
+          <a href="#" class="text-uppercase text-white">Matbuot markazi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /SMALL BANNER -->
+
+  <!-- NEWS -->
+  <section class="news press py-3 py-md-5">
+    <div class="container">
+      <div class="press__list">
+        <div class="row g-3">
+          <div class="col col-12 col-sm-6 col-lg-3">
+            <a href="#" class="press__card card">
+              <img src="./img/news-img.jpg" class="card-img-top" alt="news-img">
+              <div class="card-body">
+                <h5 class="card-title">O'zbekiston Rossiyaga mahsulot eksportini oshirdi</h5>
+                <p class="card-text"><small class="text-muted">04.07.2022</small></p>
+              </div>
+            </a>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-3">
+            <a href="#" class="press__card card">
+              <img src="./img/news-img.jpg" class="card-img-top" alt="news-img">
+              <div class="card-body">
+                <h5 class="card-title">O'zbekiston Rossiyaga mahsulot eksportini oshirdi</h5>
+                <p class="card-text"><small class="text-muted">04.07.2022</small></p>
+              </div>
+            </a>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-3">
+            <a href="#" class="press__card card">
+              <img src="./img/news-img.jpg" class="card-img-top" alt="news-img">
+              <div class="card-body">
+                <h5 class="card-title">O'zbekiston Rossiyaga mahsulot eksportini oshirdi</h5>
+                <p class="card-text"><small class="text-muted">04.07.2022</small></p>
+              </div>
+            </a>
+          </div>
+          <div class="col col-12 col-sm-6 col-lg-3">
+            <a href="#" class="press__card card">
+              <img src="./img/news-img.jpg" class="card-img-top" alt="news-img">
+              <div class="card-body">
+                <h5 class="card-title">O'zbekiston Rossiyaga mahsulot eksportini oshirdi</h5>
+                <p class="card-text"><small class="text-muted">04.07.2022</small></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /NEWS -->
+
+  <!-- LEAVE MESSAGE -->
+  <section class="message py-3 py-md-5 bg-gray">
+    <div class="container">
+      <h1 class="section-title text-center">Xabar qoldirish</h1>
+      <div class="line"></div>
+      <form action="" class="message__form">
+        <div class="row g-3">
+          <div class="col col-12 col-md-6">
+            <div class="row g-3">
+              <div class="col col-12">
+                <input class="message__form-input" type="text" name="name" placeholder="Ism" required>
+              </div>
+              <div class="col col-12">
+                <input class="message__form-input" type="email" name="email" placeholder="Elektron pochta" required>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6">
+            <textarea class="message__form-input" name="message" rows="5" placeholder="Xabar"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12 text-center">
+            <button class="link-btn btn btn-dark my-3" type="submit">Yuborish <img src="./img/arrow.png"
+                alt="arrow"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- /LEAVE MESSAGE -->
+
+  <!-- PARTNERS -->
+  <section class="partners py-3 py-md-5">
+    <div class="container">
+      <h1 class="section-title text-center">Hamkorlarimiz</h1>
+      <div class="line"></div>
+      <div class="partners__carousel owl-carousel owl-theme mb-2">
+        <a href="#" target="_blank" class="partners__item">
+          <div class="partners__item-imgBx">
+            <img src="./img/partner1.png" alt="partner-img">
+          </div>
+        </a>
+        <a href="#" target="_blank" class="partners__item">
+          <div class="partners__item-imgBx">
+            <img src="./img/partner2.png" alt="partner-img">
+          </div>
+        </a>
+        <a href="#" target="_blank" class="partners__item">
+          <div class="partners__item-imgBx">
+            <img src="./img/partner1.png" alt="partner-img">
+          </div>
+        </a>
+        <a href="#" target="_blank" class="partners__item">
+          <div class="partners__item-imgBx">
+            <img src="./img/partner2.png" alt="partner-img">
+          </div>
+        </a>
+        <a href="#" target="_blank" class="partners__item">
+          <div class="partners__item-imgBx">
+            <img src="./img/partner1.png" alt="partner-img">
+          </div>
+        </a>
+        <a href="#" target="_blank" class="partners__item">
+          <div class="partners__item-imgBx">
+            <img src="./img/partner2.png" alt="partner-img">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- /PARTNERS -->
+
+  <!-- FOOTER -->
+  <footer class="footer py-3 pt-md-5">
+    <div class="container">
+      <div class="footer__main pb-2">
+        <div class="row g-3">
+          <div class="col col-12 col-sm-6 col-md-3">
+            <a class="footer-brand mb-3" href="#">
+              <img src="./img/logo.png" alt="site-logo">
+            </a>
+            <a href="#" class="nav-link text-uppercase my-2">Press</a>
+            <a href="#" class="nav-link text-uppercase my-2">Aksiyadorlarga</a>
+            <a href="#" class="nav-link text-uppercase my-2">Aloqa</a>
+            <a href="#" class="nav-link text-uppercase my-2">Xizmatlar</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <h6 class="nav-link text-uppercase mb-3">Mahsulotlar</h6>
+            <a href="#" class="nav-link my-2">To'qimachilik sanoati</a>
+            <a href="#" class="nav-link my-2">Don sanoatining mahsulotlari</a>
+            <a href="#" class="nav-link my-2">Avtomobil sanoati</a>
+            <a href="#" class="nav-link my-2">Qishloq xo'jaligi mahsulotlari</a>
+            <a href="#" class="nav-link my-2">Xom ashyo va materiallar</a>
+            <a href="#" class="nav-link my-2">Qurilish mollari</a>
+            <a href="#" class="nav-link my-2">Boshqalar</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <h6 class="nav-link text-uppercase mb-3">Savollar</h6>
+            <a href="#" class="nav-link my-2">Eksport</a>
+            <a href="#" class="nav-link my-2">Import</a>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <h6 class="nav-link mb-3 text-uppercase">Bog'lanish</h6>
+            <p class="nav-link mb-2"><i class="me-1 fas fa-location-dot"></i> 107 Mustaqillik ko'chasi, Toshkent,
+              O'zbekiston</p>
+            <a href="tel:+998712094848" class="nav-link my-2"><i class="me-1 fas fa-phone"></i> +998712094848</a>
+            <a href="mailto:sales@use.uz" class="nav-link my-2"><i class="me-1 fas fa-envelope"></i> sales@use.uz</a>
+            <div class="footer__social d-flex gap-3 my-3">
+              <a href="#" target="_blank" class="footer__social-item"><img class="w-100" src="./img/yb-icon.png"
+                  alt="yb-icon"></a>
+              <a href="#" target="_blank" class="footer__social-item"><img class="w-100" src="./img/fb-icon.png"
+                  alt="fb-icon"></a>
+              <a href="#" target="_blank" class="footer__social-item"><img class="w-100" src="./img/tg-icon.png"
+                  alt="tg-icon"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy mt-2">
+        <p class="text-center mb-0">"AO UZSANOATEXPORT" Barcha huquqlar himoyalangan</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
+  <!-- SEARCH MODAL -->
+  <div class="modal fade" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="" class="message__form modal__form search__form d-flex gap-3 align-items-center">
+            <input class="message__form-input" type="search" name="search" id="search">
+            <button type="button" class="btn-close btn-dark btn" data-bs-dismiss="modal"><i
+                class="fas fa-close"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /SEARCH MODAL -->
+
+  <!-- BOOTSTRAP JS -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <!-- JQUERY JS -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+
+  <!-- OWL CAROUSEL JS -->
+  <script src="./js/owl.carousel.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
