@@ -11,6 +11,16 @@
   .banner__carousel-content {
     width: 90%;
   }
+
+  .news-detail {
+    &__img {
+      height: auto;
+    }
+
+    &__date {
+      padding: 12px;
+    }
+  }
 }
 
 @media (max-width: 575px) {

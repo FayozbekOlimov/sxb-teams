@@ -1,0 +1,12 @@
+.search {
+  &__title {
+    font-size: 24px;
+    font-family: $open700;
+  }
+
+  &__item a {
+    @include normal-size;
+    color: $primary;
+    font-family: $open600;
+  }
+}

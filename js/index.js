@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   $('#mobile-icon').click(function (e) {
     e.preventDefault();
-    window.open("/", "example", "width=375px,height=576px,left=400,top=100");
+    window.open(location.pathname, "example", "width=375px,height=576px,left=400,top=100");
   });
 
   $('.header__font-plus').click(function (e) {
@@ -94,5 +94,26 @@ $(document).ready(function () {
         items: 6,
       },
     },
+  });
+
+  const forms = $('.message__form, .feedback__form');
+
+  forms.submit(function (e) {
+    let data = forms.serialize();
+    e.preventDefault();
+
+    $.ajax({
+      type: 'GET',
+      url: location.pathname,
+      data: data,
+      success: function () {
+        Swal.fire({
+          title: 'Good job!',
+          text: 'Yuborildi',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+      }
+    });
   });
 });
