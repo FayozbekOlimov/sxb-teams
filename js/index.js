@@ -96,7 +96,7 @@ $(document).ready(function () {
     },
   });
 
-  const forms = $('.message__form, .feedback__form');
+  const forms = $('.message__form, .feedback__form').not('.search__form');
 
   forms.submit(function (e) {
     let data = forms.serialize();
@@ -115,5 +115,8 @@ $(document).ready(function () {
         });
       }
     });
+
+    $('input, textarea').val('');
+    $('.modal').modal('hide');
   });
 });
